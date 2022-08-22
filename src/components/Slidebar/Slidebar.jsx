@@ -7,6 +7,8 @@ import { UilSignOutAlt, UilBars } from '@iconscout/react-unicons'
 
 import { motion } from "framer-motion";
 
+import { Link } from 'react-router-dom'
+
 const Slidebar = () => {
 
   const [selected, setSelected] = useState(0)
@@ -49,9 +51,11 @@ const Slidebar = () => {
                 onClick={()=>setSelected(index)}
                 >
                   <item.icon />
-                  <span>
+                  {/* <span>
                     {item.heading}
-                  </span>
+                  </span> */}
+                  <Link className='link' to={item.link}>{item.heading}</Link>
+                  
                 </div>
               )
             })}

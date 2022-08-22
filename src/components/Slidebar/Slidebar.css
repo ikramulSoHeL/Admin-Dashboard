@@ -73,6 +73,11 @@
 }
 
 
+.link{
+  color: black;
+  text-decoration: none;
+}
+
 .bars{
   display: none;
 }
